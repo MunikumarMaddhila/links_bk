@@ -1,0 +1,30 @@
+server:
+  port: 8099
+
+spring:
+  application:
+   name: mylinks
+  datasource:
+#    url: jdbc:postgresql://localhost:5432/links
+    url: jdbc:postgresql://db.pbecqabkpblakopkanbe.supabase.co:5432/postgres?sslmode=require
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: Gayathri@2108
+  servlet:
+   multipart:
+    max-file-size: 2MB
+    max-request-size: 2MB
+
+
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  database-platform: org.hibernate.dialect.PostgreSQLDialect
+  flyway:
+    enabled: true
+
+jwt:
+  secret: R3p0bHh4c0t3Q3B2bUZKOW1xVnR3Yk9pN0pNQ3d5S2h4b0M=
+  expiration: 3600000   # 15 min

@@ -1,0 +1,15 @@
+package com.mylinks.repo;
+
+import java.util.Optional;
+import java.util.UUID;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import com.mylinks.users.entity.Plan;
+
+@Repository
+public interface PlanRepository extends JpaRepository<Plan, UUID> {
+    Optional<Plan> findByName(String name);
+}
+
