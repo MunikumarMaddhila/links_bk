@@ -9,7 +9,7 @@ spring:
     url: jdbc:postgresql://db.pbecqabkpblakopkanbe.supabase.co:5432/postgres?sslmode=require
     driver-class-name: org.postgresql.Driver
     username: postgres
-    password: Gayathri@2108
+    password: RZMBrjBgjtxjqumrBKKzvQjzeEBUjVmQ
   servlet:
    multipart:
     max-file-size: 2MB
