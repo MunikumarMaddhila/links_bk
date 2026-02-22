@@ -42,8 +42,8 @@ public class CheckoutService {
     @Autowired
     private OrderItemRepository orderItemRepository;
     
-    @Autowired
-    private NotificationService notificationService;
+//    @Autowired
+//    private NotificationService notificationService;
 
     @Autowired
     private UserRepository userRepository;
@@ -134,15 +134,15 @@ public class CheckoutService {
         User user = userRepository.findById(userId)
                 .orElseThrow(() -> new RuntimeException("User not found"));
 
-        notificationService.notify(
-            NotificationType.ORDER_PLACED,
-            user.getEmail(),
-            user.getPhone(),
-            Map.of(
-                "orderId", order.getId(),
-                "mode", paymentMode
-            )
-        );
+//        notificationService.notify(
+//            NotificationType.ORDER_PLACED,
+//            user.getEmail(),
+//            user.getPhone(),
+//            Map.of(
+//                "orderId", order.getId(),
+//                "mode", paymentMode
+//            )
+//        );
 
         return order;
     }

@@ -28,8 +28,8 @@ public class PaymentVerificationService {
     @Autowired
     private UserRepository userRepository;
 
-    @Autowired
-    private NotificationService notificationService;
+//    @Autowired
+//    private NotificationService notificationService;
 
     /**
      * Verify Razorpay payment signature
@@ -85,12 +85,12 @@ public class PaymentVerificationService {
             // 5️⃣ Notify user
             User user = userRepository.findById(order.getUserId()).orElseThrow();
 
-            notificationService.notify(
-                    NotificationType.PAYMENT_SUCCESS,
-                    user.getEmail(),
-                    user.getPhone(),
-                    Map.of("orderId", order.getId())
-            );
+//            notificationService.notify(
+//                    NotificationType.PAYMENT_SUCCESS,
+//                    user.getEmail(),
+//                    user.getPhone(),
+//                    Map.of("orderId", order.getId())
+//            );
 
         } catch (Exception ex) {
             throw new RuntimeException("Payment verification failed", ex);
