@@ -7,7 +7,7 @@ spring:
   datasource:
 #    url: jdbc:postgresql://localhost:5432/links
 #    url: jdbc:postgresql://db.pbecqabkpblakopkanbe.supabase.co:5432/postgres?sslmode=require
-    url: jdbc:postgresql://postgres:wgAhYaOPUtlJfpgmaHNqCoEptFfZxehQ@postgres.railway.internal:5432/railway?sslmode=require
+    url: jdbc:postgresql://postgres:wgAhYaOPUtlJfpgmaHNqCoEptFfZxehQ@shuttle.proxy.rlwy.net:26499/railway?sslmode=require
     driver-class-name: org.postgresql.Driver
     username: postgres
     password: wgAhYaOPUtlJfpgmaHNqCoEptFfZxehQ
