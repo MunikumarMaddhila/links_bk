@@ -14,7 +14,7 @@ spring:
     username: postgres
     password: wgAhYaOPUtlJfpgmaHNqCoEptFfZxehQ
 
- security:
+  security:
    oauth2:
     client:
      registration:
